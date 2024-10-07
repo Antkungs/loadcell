@@ -5,12 +5,12 @@ const int LOADCELL_DOUT_PIN = 2; // Data pin
 const int LOADCELL_SCK_PIN = 3;  // Clock pin
 
 // Define the calibration factor. Replace this with your own calibration factor.
-const float CALIBRATION_FACTOR = 752.777; // Example value; you need to calibrate
+const float CALIBRATION_FACTOR = ; // Example value; you need to calibrate
 
 HX711 scale;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   
   // Initialize the HX711
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
